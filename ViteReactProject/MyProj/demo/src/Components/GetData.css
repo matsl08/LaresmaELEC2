@@ -1,0 +1,142 @@
+body {
+    align-items: center;
+    justify-content: center;
+    background-image: url('bghf.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+}
+/* Base Styles */
+.data-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex; /* Changed to flex container */
+    gap: 1.5rem; /* Space between sections */
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+    scrollbar-width: thin; /* For better scrollbar appearance */
+  }
+  
+  .loading, .error {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem;
+    color: #333;
+    width: 100%;
+  }
+  
+  .error {
+    color: #d32f2f;
+  }
+  
+  /* Section Styles */
+  .api-section {
+    min-width: 300px; /* Minimum width for each section */
+    flex: 1; /* Allows sections to grow equally */
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: fit-content; /* Height based on content */
+  }
+  
+  .api-section h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem; /* Slightly smaller for horizontal layout */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    white-space: nowrap; /* Prevents title wrapping */
+  }
+  
+  /* Grid Layout */
+  .data-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for cards */
+    gap: 1rem;
+  }
+  
+  .data-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+    min-height: 300px; /* Consistent card height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .data-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .data-card h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #34495e;
+  }
+  
+  .data-card p {
+    margin: 0.5rem 0;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  .data-card p strong {
+    color: #2c3e50;
+  }
+  
+  .data-card img {
+    width: 100%;
+    height: 180px; /* Fixed height for consistency */
+    object-fit: contain; /* Changed to 'contain' to show full image */
+    background-color: #f5f5f5; /* Fallback background */
+    border-radius: 4px;
+    margin: 0.5rem 0;
+    padding: 0.5rem; /* Add some breathing room */
+    box-sizing: border-box;
+  }
+  
+  /* Section-specific colors */
+  .client-api {
+    border-top: 4px solid #3498db;
+  }
+  
+  .fano-api {
+    border-top: 4px solid #e74c3c;
+  }
+  
+  .david-api {
+    border-top: 4px solid #2ecc71;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .data-container {
+      flex-wrap: wrap; /* Wrap sections on smaller screens */
+      overflow-x: visible;
+    }
+    
+    .api-section {
+      min-width: calc(50% - 1rem); /* Two sections per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .api-section {
+      min-width: 100%; /* Full width on mobile */
+    }
+    
+    .data-card {
+      min-height: auto; /* Flexible height on mobile */
+    }
+    
+    .data-card img {
+      height: 200px; /* Larger images on mobile */
+    }
+  }

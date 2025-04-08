@@ -1,0 +1,57 @@
+[
+    {
+        "Coffee" :  "Espresso",
+        "Size" : "Regular",
+        "Price (Hot)" :  "180",
+        "Price (Cold)" : "200"
+    },
+
+    {
+        "Coffee" :  "Double",
+        "Size" : "Regular",
+        "Price (Hot)" :  "200",
+        "Price (Cold)" : "220"
+    },
+
+    {
+        "Coffee" :  "Cappucino",
+        "Size" : "Regular",
+        "Price (Hot)" :  "220",
+        "Price (Cold)" : "240"
+    },
+
+    {
+        "Coffee" :  "Cafe Latte",
+        "Size" : "Regular",
+        "Price (Hot)" :  "220",
+        "Price (Cold)" : "240"
+    },
+
+    {
+        "Coffee" :  "Americano",
+        "Size" : "Regular",
+        "Price (Hot)" :  "180",
+        "Price (Cold)" : "200"
+    },
+
+    {
+        "Coffee" :  "Cafe Mocha",
+        "Size" : "Regular",
+        "Price (Hot)" :  "220",
+        "Price (Cold)" : "240"
+    },
+
+    {
+        "Coffee" :  "Macchiato",
+        "Size" : "Regular",
+        "Price (Hot)" :  "220",
+        "Price (Cold)" : "240"
+    },
+
+    {
+        "Coffee" :  "Chocolate",
+        "Size" : "Regular",
+        "Price (Hot)" :  "230",
+        "Price (Cold)" : "250"
+    }
+]

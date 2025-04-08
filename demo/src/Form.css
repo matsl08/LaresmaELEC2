@@ -1,0 +1,88 @@
+body {
+    align-items: center;
+    justify-content: center;
+    background-image: url('blckbrd.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+}
+  /* Adjust the form width to be more balanced */
+  .form-container {
+    width: 1000%;
+    max-width: 900px;  /* Increased width */
+    padding: 40px;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form title */
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling inputs for better width */
+  input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  /* Labels */
+  label {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Radio and Checkbox Groups */
+  .radio-group, .checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .radio-group label, .checkbox-group label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  /* Submit Button */
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .form-container {
+      max-width: 90%;
+      padding: 20px;
+    }
+  }
+  

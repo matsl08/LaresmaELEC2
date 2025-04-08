@@ -1,0 +1,73 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('mjb.gif');
+  background-repeat: no-repeat;
+
+  background-size: 100% 100%;
+  background-attachment: scroll;
+  height: 100vh;
+}
+
+button {
+  margin-left: 21px;
+}
+
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #dddddd;
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+p br {
+  margin-bottom: 10px;
+}
+
+/* Style for the navbar container */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+/* Style for the unordered list */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Style for the list items */
+.navbar ul li {
+  margin-right: 20px;
+}
+
+/* Style for the links */
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+/* Change link color on hover */
+.navbar ul li a:hover {
+  color: #f0a500;
+}
+
+/* Active link styling */
+.navbar ul li a.active {
+  font-weight: bold;
+  color: #f0a500;
+}
