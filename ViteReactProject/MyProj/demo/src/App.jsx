@@ -1,13 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import {GetData}  from './Components'
+import CounterOne from './useReducer'
 
-function App() {
+const App = () => {
   return (
     <>
-    <div><GetData /></div>
+    <div><CounterOne /></div> 
     </>
   )
 }
